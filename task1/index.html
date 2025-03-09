@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Kishmala Khan</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Kishmala Khan</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="projects.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Me</a></div>
+            </div>
+        </div>
+
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="img-outside">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="assets/main.png" alt="">
+                </div>
+            </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Kishmala</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span>Developer</span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I am a passionate developer dedicated to crafting innovative, efficient, and user-friendly solutions that blend creativity with technology to solve real-world problems</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Kishmala0987" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kishmala-k-152830227/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button class="cv">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+              <div class="footer-logo">
+                <span>Kishmala Khan</span>
+              </div>
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              <div class="copyright">
+                <p>&copy; 2025 Kishmala Khan. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            const cv = document.querySelector('.cv');
+            cv.addEventListener(('click'),()=>{
+                const link =document.createElement('a');
+                link.href='assets/cv.pdf';
+                link.download='My-CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+</body>
+</html>
